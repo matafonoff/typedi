@@ -22,7 +22,7 @@
     "dependency-injection"
   ],
   "scripts": {
-    "postprepare": "npm run build:all",
+    "prepare": "npm run build:all && echo 'BAZINGA!!!' && ls -la ./build",
     "build": "npm run build:cjs",
     "build:clean": "rimraf build",
     "build:es2015": "tsc --project tsconfig.prod.esm2015.json",

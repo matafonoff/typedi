@@ -4,7 +4,7 @@
   "description": "Dependency injection for TypeScript.",
   "author": "TypeStack contributors",
   "license": "MIT",
-  "sideEffects": false,
+  "sideEffects": true,
   "main": "./build/cjs/index.js",
   "module": "./build/esm5/index.js",
   "es2015": "./build/esm2015/index.js",
@@ -22,7 +22,7 @@
     "dependency-injection"
   ],
   "scripts": {
-    "prepare": "npm run build:all && echo 'BAZINGA!!!' && ls -la ./build",
+    "prepare": "npm run build:all",
     "build": "npm run build:cjs",
     "build:clean": "rimraf build",
     "build:es2015": "tsc --project tsconfig.prod.esm2015.json",
